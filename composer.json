@@ -1,5 +1,5 @@
 {
-    "name": "daar/WHO-BMI-calculator",
+    "name": "daar/bmi",
     "description": "A BMI calculater based on WHO data and definitions.",
     "type": "library",
     "license": "MIT",
