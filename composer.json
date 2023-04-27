@@ -3,10 +3,10 @@
     "description": "A BMI calculater based on WHO data and definitions.",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/daar/WHO-BMI-calculator",
+    "homepage": "https://github.com/daar/bmi",
     "support": {
-        "issues": "https://github.com/daar/WHO-BMI-calculator/issues",
-        "source": "https://github.com/daar/WHO-BMI-calculator"
+        "issues": "https://github.com/daar/bmi/issues",
+        "source": "https://github.com/daar/bmi"
     },
     "authors": [
         {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DanHarrin\\DateFormatConverter\\": "src/"
+            "daar\\bmi\\": "src/"
         }
     },
     "config": {
