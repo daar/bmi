@@ -1,2 +1,2 @@
-# WHO-BMI-calculator
-A BMI calculater based on WHO data and definitions
+# BMI
+A BMI calculator based on WHO data and definitions written in PHP
