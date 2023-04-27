@@ -1,0 +1,28 @@
+{
+    "name": "daar/WHO-BMI-calculator",
+    "description": "A BMI calculater based on WHO data and definitions.",
+    "license": "MIT",
+    "homepage": "https://github.com/daar/WHO-BMI-calculator",
+    "support": {
+        "issues": "https://github.com/daar/WHO-BMI-calculator/issues",
+        "source": "https://github.com/daar/WHO-BMI-calculator"
+    },
+    "authors": [
+        {
+            "name": "Darius Blaszyk",
+            "email": "dhkblaszyk@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DanHarrin\\DateFormatConverter\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
