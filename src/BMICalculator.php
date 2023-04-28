@@ -122,7 +122,8 @@ class BMICalculator
     {
         $bmi = self::calculateBMI($weight, $length);
 
-        if ($ageInMonths < 24) {
+        // up to 20 years use different categories
+        if ($ageInMonths < 240) {
             return self::getBMICategoryForChildren($bmi, $ageInMonths, $gender);
         } else {
             return  self::getBMICategoryForAdults($bmi);
