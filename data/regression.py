@@ -3,20 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
-
-# from matplotlib.backends.backend_pdf import PdfPages
 from scipy import stats
-
-# import io
 import pandas as pd
-
-# from reportlab.lib.pagesizes import A4
-# from reportlab.lib.units import mm
-# from reportlab.pdfgen import canvas
-# from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
-# from matplotlib.backends.backend_pdf import FigureCanvasPdf
-# import markdown
-# from tabulate import tabulate
 
 __IMG_PATH__ = "images/"
 
