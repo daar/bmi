@@ -29,21 +29,21 @@ class BMICalculator
     private static function getBMICategoryForAdults($bmi)
     {
         if ($bmi < 16) {
-            return 'Underweight (Severe thinness)';
+            return __('bmi::translations.adults.severe-underweight');
         } elseif ($bmi <= 16.9) {
-            return 'Underweight (Moderate thinness)';
+            return __('bmi::translations.adults.moderate-underweight');
         } elseif ($bmi <= 18.4) {
-            return 'Underweight (Mild thinness)';
+            return __('bmi::translations.adults.mild-underweight');
         } elseif ($bmi <= 24.9) {
-            return 'Normal weight';
+            return __('bmi::translations.adults.normal');
         } elseif ($bmi <= 29.9) {
-            return 'Overweight (Pre-obese)';
+            return __('bmi::translations.adults.overweight');
         } elseif ($bmi <= 34.9) {
-            return 'Obese class I';
+            return __('bmi::translations.adults.obese-class-1');
         } elseif ($bmi <= 39.9) {
-            return 'Obese class II';
+            return __('bmi::translations.adults.obese-class-2');
         } else {
-            return 'Obese class III';
+            return __('bmi::translations.adults.obese-class-3');
         }
     }
 
@@ -96,13 +96,13 @@ class BMICalculator
         }
 
         if ($bmi < $bmiGrowthChart[0]) {
-            $category = 'Underweight'; // z-score < -2
+            $category = trans('bmi::translations.children.underweight'); // z-score < -2
         } elseif ($bmi < $bmiGrowthChart[1]) {
-            $category = 'Normal weight'; // -2 <= z-score < 1
+            $category = __('bmi::translations.children.normal'); // -2 <= z-score < 1
         } elseif ($bmi < $bmiGrowthChart[2]) {
-            $category = 'Overweight'; // 1 <= z-score < 2
+            $category = __('bmi::translations.children.overweight'); // 1 <= z-score < 2
         } else {
-            $category = 'Obese'; // z-score >= 2
+            $category = __('bmi::translations.children.obese'); // z-score >= 2
         }
 
         return $category;
