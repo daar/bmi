@@ -2,8 +2,8 @@
 
 namespace Daar\Bmi\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Daar\Bmi\BmiServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

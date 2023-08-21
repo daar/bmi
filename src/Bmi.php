@@ -16,6 +16,7 @@ class Bmi
     public static function calculate(float $weight, float $length)
     {
         $lengthInMeters = $length / 100;
+
         return round($weight / ($lengthInMeters * $lengthInMeters), 1);
     }
 
