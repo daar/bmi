@@ -1,26 +1,19 @@
 <?php
 
 /**
- * BMI Calculator Library
- *
  * This library calculates the Body Mass Index (BMI) for a given weight and height and returns the corresponding BMI category
  * according to the World Health Organization (WHO) criteria.
  *
  * References:
  *   WHO Child Growth Standards: https://www.who.int/childgrowth/standards/en/
  *   WHO BMI Classification: https://en.wikipedia.org/wiki/Body_mass_index
- *
- * @author      Darius Blaszyk
- * @license     MIT
- * @version     1.0.0
  */
 
-namespace daar\bmi;
+namespace Daar\Bmi;
 
-class BMICalculator
+class Bmi
 {
-
-    public static function calculateBMI(float $weight, float $length)
+    public static function calculate(float $weight, float $length)
     {
         $lengthInMeters = $length / 100;
         return round($weight / ($lengthInMeters * $lengthInMeters), 1);
@@ -108,15 +101,15 @@ class BMICalculator
         return $category;
     }
 
-    public static function calculateBMICategory(float $weight, float $length, string $gender, float $ageInMonths)
+    public static function category(float $weight, float $length, string $gender, float $ageInMonths)
     {
-        $bmi = self::calculateBMI($weight, $length);
+        $bmi = self::calculate($weight, $length);
 
         // up to 20 years use different categories
         if ($ageInMonths < 240) {
             return self::getBMICategoryForChildren($bmi, $ageInMonths, $gender);
         } else {
-            return  self::getBMICategoryForAdults($bmi);
+            return self::getBMICategoryForAdults($bmi);
         }
     }
 }
