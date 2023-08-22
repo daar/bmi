@@ -23,37 +23,16 @@ You can install the package via composer:
 composer require daar/bmi
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="bmi-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="bmi-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="bmi-views"
-```
-
 ## Usage
 
 ```php
-$bmi = new Daar\Bmi();
-echo $bmi->echoPhrase('Hello, Daar!');
+use Daar\Bmi\BMI;
+
+// Calculate the BMI
+$bmi = BMI::calculate($weight, $length);
+
+// Calculate the BMI category according to the WHO standard
+$category = BMI::category($weight, $length, $gender, $ageInMonths);
 ```
 
 ## Testing
