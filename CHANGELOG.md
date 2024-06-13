@@ -2,6 +2,14 @@
 
 All notable changes to `bmi` will be documented in this file.
 
+## v1.1.4 - 2024-06-13
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/daar/bmi/pull/8
+
+**Full Changelog**: https://github.com/daar/bmi/compare/v1.1.3...v1.1.4
+
 ## v1.1.3 - 2024-04-25
 
 ### What's Changed
